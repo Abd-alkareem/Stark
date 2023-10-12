@@ -1,0 +1,1010 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+:root {
+    --main-green: #295a51;
+    --main-white: #f1f5f4;
+    --main-brown: #a87631;
+    --main-blue: #13034e;
+    --tr_3: 0.3s;
+}
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.h-b {
+    color: var(--main-blue);
+    transition: var(--tr_3);
+}
+
+.h-b:hover {
+    color: var(--main-white);
+    background-color: var(--main-blue);
+}
+
+/*  */
+/* container */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/*  */
+
+/*  */
+
+/* start haeder */
+header {
+    padding: 10px 0;
+    background-color: var(--main-white);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header .container .links a {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--main-blue);
+    margin-right: 10px;
+}
+
+header .container .links a.active {
+    border-bottom: 2px solid var(--main-blue);
+}
+
+
+header .container .logo {
+    display: flex;
+    align-items: center;
+    margin-left: -200px;
+}
+
+header .container .logo .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid var(--main-blue);
+    border-radius: 5px;
+    background-color: var(--main-white);
+}
+
+header .container .logo .name {
+    font-size: 30px;
+    color: var(--main-blue);
+    font-weight: 600;
+}
+
+header .container .subscribe {
+    color: var(--main-blue);
+    border: 1.5px solid var(--main-blue);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--tr_3);
+}
+
+header .container .subscribe:hover {
+    color: var(--main-white);
+    background-color: var(--main-blue);
+}
+
+/* end haeder */
+
+
+/* start landing */
+.landing {
+    min-height: 80vh;
+    background-color: var(--main-white);
+    padding-top: 25px;
+}
+
+
+.landing .container h1 {
+    margin: 0 auto 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+    word-spacing: 10px;
+    color: var(--main-blue);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.landing .container .holder {
+    min-height: 70vh;
+    display: flex;
+}
+
+.landing .container .holder .left {
+    flex-basis: 20%;
+    padding: 80px 10px 10px;
+}
+
+.landing .container .holder .left>div:first-child {
+    margin-bottom: 70px;
+    width: 150px;
+    margin-top: 35px;
+}
+
+
+.landing .container .holder .left>div:first-child button {
+    border: 1.5px solid var(--main-blue);
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.landing .container .holder .left>div:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid var(--main-blue);
+}
+
+.landing .container .holder .left>div:last-child .image {
+    width: 100%;
+    height: 100px;
+    background-image: url(../images/baseball_gloves-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.landing .container .holder .middel {
+    flex-basis: 60%;
+}
+
+.landing .container .holder .middel .image {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-image: url(../images/player-2-removebg-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.landing .container .holder .right {
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.landing .container .holder .right .image {
+    margin-bottom: 10px;
+    width: 140px;
+    height: 140px;
+    background-image: url(../images/baseball_shirt-removebg-preview.png);
+    background-size: cover;
+}
+
+.landing .container .holder .right button {
+    background-color: var(--main-green);
+    padding: 7px 10px;
+    color: var(--main-white);
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--tr_3);
+    border: 2px solid var(--main-green);
+}
+
+.landing .container .holder .right button:hover {
+    color: var(--main-green);
+    background-color: var(--main-white);
+}
+
+.landing .container .holder .right span {
+    position: absolute;
+    top: 65px;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--main-green);
+    transform: rotate(-35deg);
+    max-width: 180px;
+}
+
+.landing .container .holder .right span::after {
+    content: "";
+    display: block;
+    width: 145px;
+    height: 4px;
+    background-color: var(--main-green);
+}
+
+/* end landing */
+
+/* start seller */
+.sellers {
+    padding: 50px 0;
+}
+
+.sellers .container {
+    display: flex;
+}
+
+.sellers .container .best-stuf {
+    min-width: 190px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--main-white);
+}
+
+.sellers .container .best-stuf .image {
+    height: 140px;
+    background-color: var(--main-green);
+    border-radius: 10px;
+    margin: 5px 5px;
+    position: relative;
+}
+
+.sellers .container .best-stuf .image::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--main-white);
+    opacity: 0.1;
+}
+
+.sellers .container .best-stuf .image img {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sellers .container .best-stuf p {
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    margin: 15px 0 10px;
+}
+
+.sellers .container .best-stuf span {
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.sellers .container .best-stuf button {
+    width: 90%;
+    display: block;
+    margin: auto;
+    background-color: var(--main-green);
+    border: none;
+    color: white;
+    font-weight: 500;
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.sellers .container .holder {
+    margin-left: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: calc(100% - 210px);
+}
+
+.sellers .container .holder .controle {
+    display: flex;
+    align-items: center;
+}
+
+.sellers .container .holder .controle h2 {
+    margin: 0;
+    font-size: 40px;
+    color: var(--main-green);
+    margin-right: auto;
+}
+
+.sellers .container .holder .controle i {
+    font-size: 18px;
+    margin-right: 30px;
+    border: 1px solid;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--main-green);
+    transition: var(--tr_3);
+}
+
+.sellers .container .holder .controle i:hover {
+    background-color: var(--main-green);
+    color: var(--main-white);
+}
+
+.sellers .container .holder .slider {
+    height: 100%;
+    display: flex;
+    padding: 10px 0 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.sellers .container .holder .slider .slide {
+    min-width: 150px;
+    /* width: calc(100% / 3); */
+    margin: 0 15px;
+    padding: 10px;
+    background-color: var(--main-white);
+    border-radius: 10px;
+}
+
+.sellers .container .holder .slider .slide .image {
+    position: relative;
+    height: 110px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.sellers .container .holder .slider .slide .image::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--main-white);
+    opacity: 0.1;
+}
+
+.sellers .container .holder .slider .slide .image img {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sellers .container .holder .slider .slide p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.sellers .container .holder .slider .slide span {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+}
+
+.sellers .container .holder .slider .slide button {
+    margin: 10px auto 0;
+    display: block;
+    width: 90%;
+    border: none;
+    background-color: var(--main-green);
+    font-weight: 500;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* end seller */
+
+
+/* start join team */
+.join-team {
+    padding: 50px 0;
+    background-color: var(--main-white);
+}
+
+.join-team .container {
+    display: flex;
+    gap: 90px;
+}
+
+.join-team .container .image {
+    width: 40%;
+    height: 350px;
+    border-radius: 10px;
+    background-image: url(../images/player-alt-1.jpg);
+    background-size: 100%;
+    min-width: 370px;
+}
+
+.join-team .container .more {
+    width: 50%;
+    padding-top: 40px;
+}
+
+.join-team .container .more>span {
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--main-green);
+}
+
+.join-team .container .more p {
+    max-width: 360px;
+    line-height: 1.4;
+}
+
+.join-team .container .more button {
+    width: 120px;
+    padding: 5px 7px;
+    color: var(--main-green);
+    border: 2px solid var(--main-green);
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--tr_3);
+    margin: 30px 0 40px;
+}
+
+
+.join-team .container .more>div {
+    display: flex;
+    align-items: center;
+}
+
+.join-team .container .more div>span:not(:last-child) {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid var(--main-green);
+    background-image: url(../images/face-player.jpeg);
+    background-size: cover;
+    margin-right: -10px;
+}
+
+.join-team .container .more div>span:last-child {
+    margin-left: 20px;
+}
+
+/* end join team */
+
+/* start shop */
+
+.shop .container .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shop .container .main h1 {
+    color: var(--main-blue);
+}
+
+.shop .container .main .sections {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1.5px solid var(--main-blue);
+
+}
+
+.shop .container .main .sections span {
+    color: var(--main-blue);
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.shop .container .main .sections span.active {
+    color: var(--main-green);
+    font-weight: 700;
+}
+
+.shop .container .holder {
+    margin: 20px 0;
+}
+
+.shop .container .holder .slide {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: none;
+    transition: var(--tr_3);
+}
+
+.shop .container .holder .slide.active {
+    display: grid;
+}
+
+.shop .container .holder .slide.hidden {
+    opacity: 0;
+}
+
+.shop .container .holder .slide .product {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.shop .container .holder .slide .product .image {
+    width: 120px;
+    height: 130px;
+    margin: auto;
+    background-color: white;
+    border-radius: 0px;
+    border-bottom: 3px solid var(--main-green);
+    background-size: cover;
+
+}
+
+.shop .container .holder .slide:nth-child(1) .product .image {
+    background-image: url(../images/baseball_shirt-removebg-preview.png);
+}
+
+.shop .container .holder .slide:nth-child(2) .product .image {
+    background-image: url(../images/shoose-removebg-preview.png);
+}
+
+.shop .container .holder .slide:nth-child(3) .product .image {
+    background-image: url(../images/ball-removebg-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.shop .container .holder .slide:nth-child(4) .product .image {
+    background-image: url(../images/baseball-bag.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.shop .container .holder .slide:nth-child(5) .product .image {
+    background-image: url(../images/bat-removebg-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.shop .container .holder .slide .product .name {
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.shop .container .holder .slide .product .description {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.shop .container .holder .slide .product .price {
+    font-weight: 600;
+    color: var(--main-green);
+}
+
+/* end shop */
+
+/* start our program */
+.program {
+    padding: 60px 0 50px;
+    background-color: var(--main-green);
+}
+
+.program .container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.program .container .image {
+    width: 55%;
+    height: 300px;
+    position: relative;
+    padding-left: 50px;
+}
+
+.program .container .image .m-1 {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    background-image: url(../images/ball-alt.jpg);
+    background-size: cover;
+    border: 1px solid var(--main-white);
+    border-radius: 10px;
+}
+
+.program .container .image .m-2 {
+    position: absolute;
+    top: 80px;
+    left: 220px;
+    height: 250px;
+    width: 250px;
+    z-index: 2;
+    background-image: url(../images/palyer-alt-3.jpg);
+    background-size: cover;
+    border: 1px solid var(--main-white);
+    border-radius: 10px;
+}
+
+.program .container .more {
+    width: 40%;
+}
+
+.program .container .more span {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--main-white);
+}
+
+.program .container .more p {
+    color: var(--main-white);
+    line-height: 1.3;
+}
+
+.program .container .more button {
+    background-color: var(--main-green);
+    border: 2px solid var(--main-white);
+    color: var(--main-white);
+    padding: 7px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--tr_3);
+    font-weight: 600;
+}
+
+.program .container .more button:hover {
+    background-color: var(--main-white);
+    color: var(--main-green);
+}
+
+.program .container>i {
+    position: absolute;
+    font-size: 110px;
+    transform: rotate(130deg);
+    bottom: -15px;
+    right: 30px;
+    color: var(--main-white);
+    opacity: 0.1;
+
+}
+
+/* end our program */
+
+/* start coches */
+.coches {
+    padding: 50px 0;
+}
+
+.coches .container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 60px;
+}
+
+.coches .container .image {
+    width: 350px;
+    height: 300px;
+    border: 1px solid;
+    border-radius: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    display: flex;
+}
+
+
+.coches .container .image .img {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+
+}
+
+.coches .container .image .img:nth-child(1) {
+    background-image: url(../images/player-3.jpg);
+
+}
+
+.coches .container .image .img:nth-child(2) {
+    background-image: url(../images/palyer-alt-3.jpg);
+}
+
+.coches .container .image .img:nth-child(3) {
+    background-image: url(../images/player-alt-1.jpg);
+}
+
+.coches .container .more {
+    flex: 1;
+}
+
+.coches .container .more .para {
+    max-width: 350px;
+    margin: 20px 0 50px;
+}
+
+.coches .container .more .para p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.3;
+    display: none;
+    transition: var(--tr_3);
+}
+
+.coches .container .more .para p.hidden {
+    opacity: 0;
+}
+
+.coches .container .more .para p.active {
+    display: block;
+}
+
+.coches .container .more .name .n-s {
+    flex-direction: column;
+    gap: 5px;
+    display: none;
+}
+
+.coches .container .more .name .n-s.active {
+    display: flex;
+}
+
+.coches .container .more .name .n-s>span:first-child {
+    font-weight: 700;
+    transition: var(--tr_3);
+}
+
+.coches .container .more .name .n-s>span:last-child {
+    color: darkgray;
+    transition: var(--tr_3);
+}
+
+.coches .container .more .name .n-s.hidden span {
+    opacity: 0;
+}
+
+.coches .container .more .controle {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.coches .container .more .controle>span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: darkgray;
+    cursor: pointer;
+    transition: var(--tr_3);
+}
+
+.coches .container .more .controle>span.active {
+    background-color: var(--main-green);
+}
+
+/* end coches */
+
+
+/* start footer */
+footer {
+    padding: 50px 0;
+    background-color: var(--main-white);
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container .half-left {
+    width: 40%;
+    padding-right: 40px;
+}
+
+footer .container .half-left .logo {
+    display: flex;
+    align-items: center;
+}
+
+footer .container .half-left .logo .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid var(--main-blue);
+    border-radius: 5px;
+    background-color: var(--main-white);
+}
+
+footer .container .half-left .logo .name {
+    font-size: 30px;
+    color: var(--main-blue);
+    font-weight: 600;
+}
+
+footer .container .half-left h1 {
+    color: var(--main-blue);
+}
+
+footer .container .half-left input {
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px 10px;
+    border: none;
+    width: 250px;
+    font-size: 14px;
+}
+
+footer .container .half-left input:focus {
+    outline: 1px solid var(--main-blue);
+}
+
+footer .container .half-left p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+footer .container .half-left button {
+    background-color: var(--main-green);
+    padding: 8px 38px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+footer .container .half-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .container .half-right>.links {
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: flex-start;
+}
+
+footer .container .half-right .links ul {
+    padding: 0;
+    margin-right: auto;
+}
+
+footer .container .half-right .links ul h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+footer .container .half-right .links ul li {
+    font-weight: 500;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: var(--tr_3);
+    border-bottom: 1.5px solid transparent;
+}
+
+footer .container .half-right .links ul li:hover {
+    color: var(--main-green);
+    border-color: var(--main-green);
+}
+
+footer .container .half-right .social {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+footer .container .half-right .social h2 {
+    margin: 15px 0;
+    display: block;
+    width: 100%;
+}
+
+footer .container .half-right .social .links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+footer .container .half-right .social .links i {
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: var(--main-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+footer .container .half-right .download {
+    width: 50%;
+    display: flex;
+    gap: 10px;
+    padding-left: 60px;
+}
+
+footer .container .half-right .download a {
+    background-color: transparent;
+    color: var(--main-green);
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1.5px solid var(--main-green);
+    width: 100px;
+    text-align: center;
+    transition: var(--tr_3);
+    font-weight: 500;
+}
+
+footer .container .half-right .download a:hover {
+    background-color: var(--main-green);
+    color: white;
+}
+
+
+footer .container .half-right .copy span {
+    color: var(--main-blue);
+    font-weight: 500;
+}
+
+footer .container .half-right .copy a {
+    color: black;
+    font-size: 14px;
+    transition: var(--tr_3);
+    margin-left: 40px;
+    border-bottom: 1.5px solid transparent;
+    font-weight: 400;
+}
+
+footer .container .half-right .copy a:hover {
+    border-color: var(--main-green);
+    color: var(--main-green);
+}
+
+/* end footer */

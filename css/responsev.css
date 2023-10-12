@@ -1,0 +1,187 @@
+@media(max-width:991px) {
+
+    .program .container .image .m-1 {
+        left: 0 !important;
+    }
+
+    .program .container .image .m-2 {
+        /* margin-left: 0 !important; */
+        left: 150px !important;
+    }
+
+    footer .container .half-right {
+        width: 60% !important;
+    }
+}
+
+@media (max-width:767px) {
+
+    .landing .container .holder {
+        flex-wrap: wrap;
+    }
+
+    .landing .container .holder .middel {
+        flex-basis: 100% !important;
+        width: 100%;
+        height: 80vh;
+    }
+
+    .landing .container .holder .left {
+        order: 2;
+        flex-basis: 50% !important;
+    }
+
+    .landing .container .holder .left div:first-child {
+        margin: 35px auto 50px;
+        max-width: 140px;
+    }
+
+    .landing .container .holder .left div:last-child {
+        margin: 35px auto 50px;
+        max-width: 140px;
+    }
+
+    .landing .container .holder .right {
+        flex-basis: 50% !important;
+        padding-bottom: 0;
+    }
+
+    .landing .container .holder .right span {
+        top: 135px !important;
+    }
+
+    .join-team .container {
+        gap: 20px !important;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .join-team .container .more {
+        text-align: center;
+
+    }
+
+    .join-team .container .more>div {
+        justify-content: center;
+    }
+
+    .program .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .program .container .more {
+        text-align: center;
+        width: 100% !important;
+        max-width: 500px;
+    }
+
+    .program .container .image {
+        position: relative;
+        padding-left: 0px !important;
+        flex-basis: 100% !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .program .container .image .m-1 {
+        position: relative !important;
+    }
+
+    .program .container .image .m-2 {
+        margin-left: 0 !important;
+        left: 0px !important;
+        position: relative !important;
+        top: 0 !important;
+    }
+
+    .coches .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .coches .container {
+        gap: 0 !important;
+    }
+
+    .coches .container .more {
+        text-align: center;
+    }
+
+
+    .coches .container .more .para {
+        margin: 20px 0 30px !important;
+    }
+
+    .coches .container .more .controle {
+        justify-content: center;
+    }
+
+    footer .container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    footer .container .half-right {
+        width: 100% !important;
+    }
+
+    footer .container .half-left {
+        width: 100% !important;
+    }
+
+    footer .container .half-left p {
+        max-width: 300px;
+    }
+
+
+}
+
+@media(max-width:575px) {
+    .shop .container .main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .shop .container .main .sections {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer .container .half-right>.links {
+        flex-wrap: wrap;
+    }
+
+    footer .container .half-right .links ul {
+        min-width: 150px;
+    }
+
+}
+
+
+
+/*  */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+
+
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
